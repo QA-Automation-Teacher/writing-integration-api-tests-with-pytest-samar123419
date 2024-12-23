@@ -1,5 +1,4 @@
 import requests
-import json
 
 BASE_URL = "http://localhost:5000"
 
@@ -22,3 +21,5 @@ def test_get_nonexistent_post():
     post_id = 9999
     response = requests.get(f"{BASE_URL}/posts/{post_id}")
     assert response.status_code == 404
+
+
